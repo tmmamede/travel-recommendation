@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url("../img/background.jpg");
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+header {
+    display: flex;
+    background-color: #1e90ff;
+    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header h1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 0.1rem 1rem;
+    font-size: 1.5rem;
+}   
+
+header nav {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.1rem 0.4rem;
+}
+
+header nav a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin: 0 0.4rem;
+}
+
+header nav a:hover {
+    font-weight: bold;
+}
+
+header form {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0.1rem 1rem;
+}
+
+header form input {
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    margin: 0.1rem 0.4rem;
+    padding: 0.2rem 0.8rem;
+    width: calc(2 * 70px + 2 * 0.4rem);
+}
+
+header form button {
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: #1e90ff;
+    cursor: pointer;
+    margin: 0.1rem 0.4rem;
+    padding: 0.2rem 0.8rem;
+    width: 70px;
+    justify-content: center;
+}
+
+header form button:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+.home-section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section p {
+    max-width: 500px;
+    text-align: center;
+}
+
+.about-section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section p {
+    max-width: 1000px;
+    text-align: center;
+}
+
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.team-section h1 {
+    margin: 0.5rem;
+    max-width: 50px;
+}
+
+.team-section article {
+    margin: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+.team-section article img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0.385rem 0.75rem;
+}
+
+.team-section article h1{
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
+    max-width: 100px;
+}
+
+.team-section article h2{
+    font-size: 0.6rem;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0.5rem 0.5rem;
+}
+
+.contact-section form label {
+    display: flex;
+    font-size: 0.8rem;
+    margin: 0.2rem 0.4rem;
+}
+
+.contact-section form input {
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    margin: 0.1rem 0.4rem;
+    padding: 0.2rem 0.8rem;
+}
+
+.contact-section form textarea {
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    margin: 0.1rem 0.4rem;
+    padding: 0.2rem 0.8rem;
+}
+
+.contact-section form button {
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(30, 144, 255);
+    color: white;
+    cursor: pointer;
+    margin: 0.4rem 0.4rem;
+    padding: 0.2rem 0.8rem;
+    justify-content: center;
+}
+
+.contact-section form button:hover {
+    font-weight: bold;
+}
+
+.search-section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.results-section div {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    max-width: 300px;
+    margin: 0.5rem;
+}
+
+.results-section div h2 {
+    margin: 0.5rem;
+}
+
+.results-section div p {
+    margin: 0.5rem;
+    height: 100px;
+}
+
+.results-section div img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+}
